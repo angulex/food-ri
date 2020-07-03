@@ -1,0 +1,40 @@
+<section class="section-form">
+  <div class="container">
+    <div>
+      <h2>We're happy to hear from you</h2>
+    </div>
+    <div>
+      <form method="post" action="" class="contact-form" fxLayout="column" fxLayoutGap="15px">
+        <div fxLayout="column" fxLayoutGap="8px">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div fxLayout="column" fxLayoutGap="8px">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div fxLayout="column" fxLayoutGap="8px">
+          <label for="find-us">How did you find us?</label>
+          <select name="find-us" id="find-us">
+            <option value="friends" selected>Friends</option>
+            <option value="search">Search engine</option>
+            <option value="ad">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="start center">
+          <label>Newsletter?</label>
+          <input type="checkbox" name="news" id="news" checked /> Yes, please
+        </div>
+        <div fxLayout="column" fxLayoutGap="8px">
+          <label>Drop us a line</label>
+          <textarea name="message"></textarea>
+        </div>
+        <div fxLayout="column" fxLayoutGap="8px">
+          <label>&nbsp;</label>
+          <input class="btn btn-full" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

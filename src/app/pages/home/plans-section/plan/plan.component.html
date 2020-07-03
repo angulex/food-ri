@@ -1,0 +1,19 @@
+<div class="plan-box" fxLayout="column" fxLayoutAlign="center center">
+    <div  fxLayout="column" fxLayoutAlign="center center">
+      <h3>{{ plan.name }}</h3>
+      <p class="plan-price">${{ plan.price }} <span>/ {{ plan.unit }}</span></p>
+      <p class="plan-price-meal">{{ plan.description }}</p>
+    </div>
+    <div  fxLayout="column" fxLayoutAlign="center center">
+      <ul class="features">
+        <li *ngFor="let feature of plan.features">
+          <i class="icon-small ion-md-{{ feature !== '' ? 'checkmark' : 'close' }}"></i> {{ feature }}
+        </li>
+      </ul>
+    </div>
+    <div>
+      <a [routerLink]="" class="btn {{ i === 1 ? 'btn-full' : 'btn-ghost' }}"
+        >Sign up now</a
+      >
+    </div>
+  </div>

@@ -1,0 +1,17 @@
+<section class="section-steps">
+  <div class="container">
+    <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+    <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="32px">
+      <div fxFlex="50%" fxLayoutAlign.gt-sm="end center" fxLayoutAlign.lt-md="center center">
+        <img src="/assets/resources/img/app-iPhone.png" alt="Food-RI app on iPhone" class="app-screen" />
+      </div>
+      <div fxFlex="50%" class="steps-box">
+        <app-step *ngFor="let step of steps" [step]="step"></app-step>
+        <a [routerLink]="" class="btn-app"><img src="/assets/resources/img/download-app.svg"
+            alt="App Store Button" /></a>
+        <a [routerLink]="" class="btn-app"><img src="/assets/resources/img/download-app-android.png"
+            alt="Play Store Button" /></a>
+      </div>
+    </div>
+  </div>
+</section>

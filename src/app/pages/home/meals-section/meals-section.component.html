@@ -1,0 +1,9 @@
+<section class="section-meals">
+  <ul class="meals-showcase" fxLayout="row wrap">
+    <li class="meal" *ngFor="let meal of meals" fxFlex.gt-sm="25%" fxFlex.lt-md="50%">
+      <figure class="meal-photo">
+        <img fxFlex="100%" src="{{ meal.source }}" alt="{{ meal.alt }}">
+      </figure>
+    </li>
+  </ul>
+</section>

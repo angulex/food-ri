@@ -1,0 +1,8 @@
+<section class="section-cities">
+  <div class="container">
+    <h2>We're currently in these Cities</h2>
+    <div fxLayout.gt-sm="row"  fxLayout.lt-md="column" fxLayoutGap="16px" class="boxes">
+      <app-city *ngFor="let city of cities" [city]="city" [length]="cities.length"></app-city>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<div fxFlex="calc((100% / {{ length }}))" fxLayout="column" class="box">
+    <img src="{{ city.source }}" alt="{{ city.city }}" />
+    <h3>{{ city.city }}</h3>
+    <div class="city-meta">
+        <div fxLayout="row" fxLayoutGap="8px" class="city-feature">
+            <i class="icon-small ion-md-person"></i>
+            <div>{{ city.eaters }}+ happy eaters</div>
+        </div>
+        <div fxLayout="row" fxLayoutGap="8px" class="city-feature">
+            <i class="icon-small ion-md-star"></i>
+            <div>{{ city.chefs }}+ top chefs</div>
+        </div>
+        <div fxLayout="row" fxLayoutGap="8px" class="city-feature">
+            <i class="icon-small ion-logo-twitter"></i>
+            <div>
+                <a [routerLink]="">{{ city.twitter }}</a>
+            </div>
+        </div>
+    </div>
+</div>

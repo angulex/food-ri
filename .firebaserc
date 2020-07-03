@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "food-ri-5823a": {
+      "hosting": {
+        "food-ri": [
+          "food-ri-5823a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "food-ri"
+  }
+}
